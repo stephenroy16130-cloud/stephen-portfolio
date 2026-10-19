@@ -51,7 +51,7 @@ export default function Hero() {
                 fill
                 priority
                 sizes="(min-width: 768px) 448px, 100vw"
-                className="object-cover object-bottom"
+                className="object-cover object-center"
               />
             </div>
           ) : (
@@ -64,3 +64,5 @@ export default function Hero() {
     </section>
   );
 }
+
+
