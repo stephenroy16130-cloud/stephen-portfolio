@@ -1,7 +1,7 @@
 ﻿import Image from "next/image";
-import AnimatedTitle from "./AnimatedTitle";
 import fs from "node:fs";
 import path from "node:path";
+import AnimatedTitle from "./AnimatedTitle";
 
 export default function Hero() {
   const hasPhoto = fs.existsSync(
@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden pt-24"
+      className="relative flex items-center overflow-hidden pt-24 md:min-h-screen"
     >
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 md:grid-cols-2">
         {/* Text */}
@@ -44,14 +44,16 @@ export default function Hero() {
         {/* Photo */}
         <div className="order-1 flex justify-center md:order-2 md:justify-end">
           {hasPhoto ? (
-            <Image
-              src="/stephen.jpg"
-              alt="Portrait of Stephen Onyango"
-              width={520}
-              height={620}
-              priority
-              className="h-auto w-full max-w-sm object-cover md:max-w-md"
-            />
+            <div className="relative h-[420px] w-full max-w-sm sm:h-[480px] md:h-[560px] md:max-w-md">
+              <Image
+                src="/stephen.jpg"
+                alt="Portrait of Stephen Onyango"
+                fill
+                priority
+                sizes="(min-width: 768px) 448px, 100vw"
+                className="object-cover object-bottom"
+              />
+            </div>
           ) : (
             <div className="flex aspect-[5/6] w-full max-w-sm items-center justify-center rounded-2xl border border-white/10 bg-white/5 md:max-w-md">
               <span className="text-8xl font-bold text-accent">S</span>
@@ -62,4 +64,3 @@ export default function Hero() {
     </section>
   );
 }
-

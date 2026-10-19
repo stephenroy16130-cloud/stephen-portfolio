@@ -39,7 +39,7 @@ export default function About() {
               understanding of REST APIs and state management.
             </p>
             <p>
-              Right now, I am seeking a Junior Full-Stack role where I can keep
+              Right now, I am seeking a Full-Stack developer role where I can keep
               learning, collaborate with experienced engineers, and become a
               better developer every single day. When I&apos;m not writing
               code, you&apos;ll probably find me listening to music.
@@ -65,7 +65,7 @@ export default function About() {
                 <span className="relative inline-flex h-3 w-3 rounded-full bg-accent"></span>
               </span>
               <span className="text-sm font-medium">
-                Open to Junior Full-Stack roles
+                Open to Full-Stack developer roles
               </span>
             </div>
           </div>
