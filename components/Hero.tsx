@@ -1,4 +1,5 @@
 ﻿import Image from "next/image";
+import AnimatedTitle from "./AnimatedTitle";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -15,9 +16,7 @@ export default function Hero() {
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 md:grid-cols-2">
         {/* Text */}
         <div className="order-2 md:order-1">
-          <p className="text-lg text-gray-300 sm:text-xl">
-            Full-Stack Developer
-          </p>
+          <AnimatedTitle />
           <h1 className="mt-2 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
             Hi, I&apos;m <span className="text-accent">Stephen</span>
             <br />
@@ -63,3 +62,4 @@ export default function Hero() {
     </section>
   );
 }
+
