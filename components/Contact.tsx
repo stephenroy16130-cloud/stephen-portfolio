@@ -30,7 +30,7 @@ export default function Contact() {
           Get in <span className="text-accent">touch</span>
         </h2>
         <p className="mt-3 max-w-xl text-gray-400">
-          I&apos;m open to Junior Full-Stack roles. If you have an opportunity
+          I&apos;m open to Full-Stack developer roles. If you have an opportunity
           or just want to say hello, reach out.
         </p>
 
