@@ -44,16 +44,14 @@ export default function Hero() {
         {/* Photo */}
         <div className="order-1 flex justify-center md:order-2 md:justify-end">
           {hasPhoto ? (
-            <div className="relative h-[420px] w-full max-w-sm sm:h-[480px] md:h-[560px] md:max-w-md">
-              <Image
-                src="/stephen.jpg"
-                alt="Portrait of Stephen Onyango"
-                fill
-                priority
-                sizes="(min-width: 768px) 448px, 100vw"
-                className="object-cover object-center"
-              />
-            </div>
+            <Image
+              src="/stephen.jpg"
+              alt="Portrait of Stephen Onyango"
+              width={520}
+              height={620}
+              priority
+              className="h-auto w-full max-w-sm object-cover object-top md:max-w-md"
+            />
           ) : (
             <div className="flex aspect-[5/6] w-full max-w-sm items-center justify-center rounded-2xl border border-white/10 bg-white/5 md:max-w-md">
               <span className="text-8xl font-bold text-accent">S</span>
@@ -64,5 +62,3 @@ export default function Hero() {
     </section>
   );
 }
-
-
